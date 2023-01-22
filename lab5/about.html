@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <title>About</title>
+			<link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+			<header>
+				<div class="title">
+			<h1>Шашки играть</h1>
+		</div>
+				<nav>
+					<ul>
+						<li><a href="index.html">Шашки</a></li>
+						<li><a href="rules.html">Правила игры</a></li>
+						<li><a href="notation.html">Шашечная нотация</a></li>
+						<li><a href="about.html" class="active">Играть в шашки</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<div class="container">
+				<div class="chess">
+					<br>
+
+				<table class="game">
+		            <tbody>
+		                <tr>
+		                    <th></th>
+		                    <th>a</th>
+		                    <th>b</th>
+		                    <th>c</th>
+		                    <th>d</th>
+		                    <th>e</th>
+		                    <th>f</th>
+		                    <th>g</th>
+		                    <th>h</th>
+		                </tr>
+		                <tr>
+		                    <th>8</th>
+		                    <td class="cell light"></td>
+		                    <td class="cell dark"></td>
+		                    <td class="cell light"></td>
+		                    <td class="cell dark"></td>
+		                    <td class="cell light"></td>
+		                    <td class="cell dark"></td>
+		                    <td class="cell light"></td>
+		                    <td class="cell dark"></td>
+		                </tr>
+		                <tr>
+		                    <th>7</th>
+		                    <td class="cell dark"></td>
+		                    <td class="cell light"></td>
+		                    <td class="cell dark"></td>
+		                    <td class="cell light"></td>
+		                    <td class="cell dark"></td>
+		                    <td class="cell light"></td>
+		                    <td class="cell dark"></td>
+		                    <td class="cell light"></td>
+		                </tr>
+		                <tr>
+		                    <th>6</th>
+		                    <td class="cell light"></td>
+		                    <td class="cell dark"></td>
+		                    <td class="cell light"></td>
+		                    <td class="cell dark"></td>
+		                    <td class="cell light"></td>
+		                    <td class="cell dark"></td>
+		                    <td class="cell light"></td>
+		                    <td class="cell dark"></td>
+		                </tr>
+		                <tr>
+		                    <th>5</th>
+		                    <td class="cell dark"></td>
+		                    <td class="cell light"></td>
+		                    <td class="cell dark"></td>
+		                    <td class="cell light"></td>
+		                    <td class="cell dark"></td>
+		                    <td class="cell light"></td>
+		                    <td class="cell dark"></td>
+		                    <td class="cell light"></td>
+		                </tr>
+		                <tr>
+		                    <th>4</th>
+		                    <td class="cell light"></td>
+		                    <td class="cell dark"></td>
+		                    <td class="cell light"></td>
+		                    <td class="cell dark"></td>
+		                    <td class="cell light"></td>
+		                    <td class="cell dark"></td>
+		                    <td class="cell light"></td>
+		                    <td class="cell dark"></td>
+		                </tr>
+		                <tr>
+		                    <th>3</th>
+		                    <td class="cell dark"></td>
+		                    <td class="cell light"></td>
+		                    <td class="cell dark"></td>
+		                    <td class="cell light"></td>
+		                    <td class="cell dark"></td>
+		                    <td class="cell light"></td>
+		                    <td class="cell dark"></td>
+		                    <td class="cell light"></td>
+		                </tr>
+		                <tr>
+		                    <th>2</th>
+		                    <td class="cell light"></td>
+		                    <td class="cell dark"></td>
+		                    <td class="cell light"></td>
+		                    <td class="cell dark"></td>
+		                    <td class="cell light"></td>
+		                    <td class="cell dark"></td>
+		                    <td class="cell light"></td>
+		                    <td class="cell dark"></td>
+		                </tr>
+		                <tr>
+		                    <th>1</th>
+		                    <td class="cell dark"></td>
+		                    <td class="cell light"></td>
+		                    <td class="cell dark"></td>
+		                    <td class="cell light"></td>
+		                    <td class="cell dark"></td>
+		                    <td class="cell light"></td>
+		                    <td class="cell dark"></td>
+		                    <td class="cell light"></td>
+		                </tr>
+		            </tbody>
+		        </table>
+						<br>
+						<div class="control-board">
+		          <button class="control-board-begin" onclick="begin();">Начало</button>
+		          <button class="control-board-example" onclick="example_one();">Пример</button>
+		        </div>
+				</div>
+
+				<div class="chat">
+					<h1>Запись партии</h1>
+					<div class="record-container">
+						<textarea rows="21" class="record-container" id="textarea"></textarea>
+					</div>
+					<button id="show-button" onclick="showTextGame();">Показать</button>
+					<div class="move-buttons">
+						<button disabled="true" onclick="compliteMove();" id="move-button-complete">Завершить ход</button>
+						<button disabled="true" onclick="cancelMove();" id="move-button-cancel">Отменить ход</button>
+					</div>
+				</div>
+			</div>
+			<footer>
+				<div class="footer">
+					<p>© 2022 Tarasova Anastasia</p>
+					<p>tm: @tora_anastasia</p>
+					<br>
+				</div>
+			</footer>
+    </body>
+  </html>
+
+	<script src="about.js"></script>
